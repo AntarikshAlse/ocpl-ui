@@ -2,6 +2,15 @@ import React from "react";
 import TechCard from "../components/TechCard";
 
 const Introduction = () => {
+  let services = [
+    "Blockchain Development",
+    "Web Development",
+    "Mobile Development",
+    "Cloud Computing",
+    "No Code Development",
+    "Internet of Things IOT",
+    "Edge Computing",
+  ];
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="text-lg">
@@ -10,15 +19,12 @@ const Introduction = () => {
         applications. Partnering with Ocpl Tech simplifies processes and
         accelerates business growth.
       </p>
-      <div className="flex flex-wrap w-80">
-        <div className="w-full md:w-1/2 lg:w-1/3 p-4">
-          {/* <img className="w-full" src="" alt="image" /> */}
-          <TechCard
-            imgSrc="https://res.cloudinary.com/ocpl-tech/image/upload/"
-            title="Blockchain Development"
-          />
-        </div>
-        <div className="w-full md:w-1/2 lg:w-1/3 p-4"></div>
+      <div className="flex flex-wrap ">
+        {services.map((service, index) => (
+          <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-4">
+            <TechCard title={service} />
+          </div>
+        ))}
       </div>
     </div>
   );

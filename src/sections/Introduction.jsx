@@ -1,5 +1,6 @@
 import React from "react";
 import TechCard from "../components/TechCard";
+//images
 import ai from "../assets/images/ai.png";
 import blockchain from "../assets/images/blockchain.jpg";
 import cloud from "../assets/images/cloud-computing.jpg";

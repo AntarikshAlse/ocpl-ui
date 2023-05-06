@@ -4,7 +4,7 @@ import TechCard from "../components/TechCard";
 import ai from "../assets/images/ai.png";
 import blockchain from "../assets/images/blockchain.jpg";
 import cloud from "../assets/images/cloud-computing.jpg";
-import kubernetes from "../assets/images/kubernetes.png";
+import kubernetes from "../assets/images/Kubernetes.png";
 import web from "../assets/images/webDev.jpg";
 import mobile from "../assets/images/app-development.jpg";
 const Introduction = () => {
